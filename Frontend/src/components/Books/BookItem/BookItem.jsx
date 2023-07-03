@@ -18,10 +18,9 @@ function BookItem({ book, size }) {
       break;
   }
   return (
-    // eslint-disable-next-line no-underscore-dangle
-    <Link to={`/livre/${book._id}`} className={styles.BookItem}>
+    <Link to={`/livre/${book.id}`} className={styles.BookItem}>
       <article>
-        <img src={book.imageUrl} alt={`${book.title}, ${book.author} - ${book.year}`} />
+        <img className={styles.BookImage} src={book.imageUrl} alt={`${book.title}, ${book.author} - ${book.year}`} />
         <div className={styles.BookInfo}>
           <div className={styles.Rating}>
             {displayStars(book.averageRating)}
@@ -39,7 +38,7 @@ function BookItem({ book, size }) {
 BookItem.propTypes = {
   size: PropTypes.number.isRequired,
   book: PropTypes.shape({
-    _id: PropTypes.string,
+    id: PropTypes.string,
     userId: PropTypes.string,
     title: PropTypes.string,
     author: PropTypes.string,

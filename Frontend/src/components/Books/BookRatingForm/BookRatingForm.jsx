@@ -1,5 +1,3 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable import/no-extraneous-dependencies */
 import * as PropTypes from 'prop-types';
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -33,13 +31,11 @@ function BookRatingForm({
       navigate(APP_ROUTES.SIGN_IN);
     }
     const update = await rateBook(id, userId, rating);
-    // eslint-disable-next-line no-console
     console.log(update);
     if (update) {
       // eslint-disable-next-line no-underscore-dangle
       setBook({ ...update, id: update._id });
     } else {
-      // eslint-disable-next-line no-alert
       alert(update);
     }
   };
