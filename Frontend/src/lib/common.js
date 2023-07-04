@@ -72,8 +72,8 @@ export async function getBestRatedBooks() {
       url: `${API_ROUTES.BEST_RATED}`,
     });
     return formatBooks(response.data);
-  } catch (e) {
-    console.error(e);
+  } catch (err) {
+    console.error(err);
     return [];
   }
 }
@@ -107,9 +107,9 @@ export async function rateBook(id, userId, rating) {
     // eslint-disable-next-line no-underscore-dangle
     book.id = book._id;
     return book;
-  } catch (e) {
-    console.error(e);
-    return e.message;
+  } catch (err) {
+    console.error(err);
+    return err.message;
   }
 }
 
