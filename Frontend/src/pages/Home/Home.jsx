@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import BookItem from '../../components/Books/BookItem/BookItem';
-import Banner from '../../images/home_banner.jpg';
+import Banner from '../../images/home_banner.webp';
 import styles from './Home.module.css';
 import { getBooks } from '../../lib/common';
 

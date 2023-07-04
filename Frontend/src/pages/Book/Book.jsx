@@ -7,7 +7,7 @@ import styles from './Book.module.css';
 import { getBook, deleteBook } from '../../lib/common';
 import BookInfo from '../../components/Books/BookInfo/BookInfo';
 import BookRatingForm from '../../components/Books/BookRatingForm/BookRatingForm';
-import BookDeleteImage from '../../images/book_delete.png';
+import BookDeleteImage from '../../images/book_delete.webp';
 import BestRatedBooks from '../../components/Books/BestRatedBooks/BestRatedBooks';
 import BackArrow from '../../components/BackArrow/BackArrow';
 

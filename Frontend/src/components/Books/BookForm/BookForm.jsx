@@ -5,7 +5,7 @@ import * as PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 import { generateStarsInputs } from '../../../lib/functions';
 import { useFilePreview } from '../../../lib/customHooks';
-import addFileIMG from '../../../images/add_file.png';
+import addFileIMG from '../../../images/add_file.webp';
 import styles from './BookForm.module.css';
 import { updateBook, addBook } from '../../../lib/common';
 

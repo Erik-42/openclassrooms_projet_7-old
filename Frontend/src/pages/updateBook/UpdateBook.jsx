@@ -6,7 +6,7 @@ import BackArrow from '../../components/BackArrow/BackArrow';
 import { getBook } from '../../lib/common';
 import { APP_ROUTES } from '../../utils/constants';
 import { useUser } from '../../lib/customHooks';
-import bookAdd from '../../images/book_add.jpg';
+import bookAdd from '../../images/book_add.webp';
 
 function UpdateBook() {
   const [book, setBook] = useState(null);
